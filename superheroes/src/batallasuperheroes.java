@@ -4,7 +4,7 @@
 public class batallasuperheroes {
     public static void main(String[] args) {
         // Crear una instancia de un superhéroe Deadpool
-        SuperHeroe heroe = new SuperHeroe("Deadpool", 30, 200, 100, true);
+        SuperHero heroe = new SuperHero("Deadpool", 30, 200, 100, true);
 
         // Crear una instancia de un villano Doctor Doom
         Villano villano = new Villano("Doctor Doom", 25, 15, 120, true);

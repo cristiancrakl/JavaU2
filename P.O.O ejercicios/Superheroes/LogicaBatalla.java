@@ -28,6 +28,8 @@ public class LogicaBatalla {
                     System.out.println("al ver las estadisticas "+ superheroe.cristian.nombre +" se curo");
                     superheroe.cristian.curarse();
                     superheroe.cristian.getStatSuper();
+                    superheroe.cristian.atacar(persona.karen);
+                    superheroe.cristian.atacar(persona.karen);
 
 
                     break;
@@ -42,6 +44,11 @@ public class LogicaBatalla {
             System.out.println("");
             System.out.println("1.ingresar 2.salir");
             opcion = scanner.nextInt();
+
+
+            
+
+
         }
         scanner.close();
 

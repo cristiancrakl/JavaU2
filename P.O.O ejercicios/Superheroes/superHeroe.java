@@ -3,11 +3,12 @@ class SuperHeroe extends Persona {
     String superPoder;
     int ataque;
 
-    public SuperHeroe(String nombre, int edad, int vida, boolean estavivo, String superPoder,int ataque,int sexo) {
+    public SuperHeroe(String nombre, int edad, int vida,int ataque ,boolean estavivo, String superPoder,int sexo) {
 
-        super(nombre, edad, vida, estavivo,sexo);
+        super(nombre, edad, vida, ataque, estavivo, sexo);
         this.superPoder = superPoder;
         this.ataque=ataque;
+        
 
     }
 

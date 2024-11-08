@@ -4,13 +4,15 @@ class Persona {
     int vida;
     boolean estavivo = true;
     int sexo;
+    int ataque;
 
-    public Persona(String nombre, int edad, int vida, boolean estavivo, int sexo) {
+    public Persona(String nombre, int edad, int vida, int ataque, boolean estavivo, int sexo) {
         this.nombre = nombre;
         this.edad = edad;
         this.vida = vida;
         this.estavivo = estavivo;
         this.sexo = sexo;
+        this.ataque = ataque;
 
     }
 
@@ -57,6 +59,25 @@ class Persona {
             System.out.println(nombre + ": Es mujer");
         } else {
             System.out.println(nombre + ": No es hombre ni mujer");
+        }
+
+    }
+
+    public void atacar(Persona oponente) {
+
+        if (!estavivo) {
+            System.out.println(nombre + " no puede atacar porque está muerto.");
+            return;
+        } else if (!oponente.estavivo) {
+            System.out.println(nombre + " no puede atacar porque "+ oponente.nombre +" está muerto.");
+            return;
+        } else {
+
+            System.out.println(nombre + " ataca a " + oponente.nombre);
+            oponente.vida -= ataque;
+            oponente.getStats();
+            System.out.println(oponente.nombre + " ahora tiene " + oponente.vida + " de vida.");
+
         }
 
     }

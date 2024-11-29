@@ -37,7 +37,7 @@ public class LogicaBatalla {
 
                 persona.sheryn.getStats();
                 persona.karen.getStats();
-                superheroe.cristian.getStatSuper();
+                superheroe.cristian.getStats();
                     break;
             }
 

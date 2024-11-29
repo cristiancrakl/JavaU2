@@ -24,7 +24,7 @@ class SuperHeroe extends Persona {
         System.out.println("vida: " + vida);
         System.out.println("Su super poder es: " + superPoder);
         System.out.println("Ataque: " + ataque);
-        estavivoComprobar();
+        estaVivoComprobar();
         
         
         System.out.println("-------------------------------------------------------------------");
@@ -34,7 +34,7 @@ class SuperHeroe extends Persona {
 
     public void curarse() {
 
-        if (estavivo == false) {
+        if (estaVivo == false) {
 
             System.out.println(nombre+" no puede curarse porque murio");
 

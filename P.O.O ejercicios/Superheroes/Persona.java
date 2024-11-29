@@ -2,47 +2,47 @@ class Persona {
     String nombre;
     int edad;
     int vida;
-    boolean estavivo = true;
+    boolean estaVivo = true;
     int sexo;
     int ataque;
 
-    public Persona(String nombre, int edad, int vida, int ataque, boolean estavivo, int sexo) {
+    public Persona(String nombre, int edad, int vida, int ataque, boolean estaVivo, int sexo) {
         this.nombre = nombre;
         this.edad = edad;
         this.vida = vida;
-        this.estavivo = estavivo;
+        this.estaVivo = estaVivo;
         this.sexo = sexo;
         this.ataque = ataque;
 
     }
 
-    public void estavivoComprobar() {
+    public void estaVivoComprobar() {
 
         if (sexo == 1) {
             if (vida <= 0) {
-                estavivo = false;
+                estaVivo = false;
                 System.out.println(nombre + ": Esta muerto");
             } else {
-                estavivo = true;
+                estaVivo = true;
                 System.out.println(nombre + ": Esta vivo");
 
             }
         } else if (sexo == 2) {
             if (vida <= 0) {
-                estavivo = false;
+                estaVivo = false;
                 System.out.println(nombre + ": Esta muerta");
             } else {
-                estavivo = true;
+                estaVivo = true;
                 System.out.println(nombre + ": Esta viva");
 
             }
 
         } else if (sexo == 3) {
             if (vida <= 0) {
-                estavivo = false;
+                estaVivo = false;
                 System.out.println(nombre + ": Esta muerte");
             } else {
-                estavivo = true;
+                estaVivo = true;
                 System.out.println(nombre + ": Esta vive");
 
             }
@@ -65,10 +65,10 @@ class Persona {
 
     public void atacar(Persona oponente) {
 
-        if (!estavivo) {
+        if (!estaVivo) {
             System.out.println(nombre + " no puede atacar porque está muerto.");
             return;
-        } else if (!oponente.estavivo) {
+        } else if (!oponente.estaVivo) {
             System.out.println(nombre + " no puede atacar porque "+ oponente.nombre +" está muerto.");
             return;
         } else {
@@ -89,7 +89,7 @@ class Persona {
         System.out.println("Edad: " + edad);
         sexoComprobar();
         System.out.println("Su vida es de: " + vida);
-        estavivoComprobar();
+        estaVivoComprobar();
         System.out.println("---------------------------------------------------------------------");
         System.out.println("");
 

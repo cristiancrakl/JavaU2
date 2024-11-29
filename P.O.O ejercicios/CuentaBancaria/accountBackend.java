@@ -35,10 +35,17 @@ public class accountBackend {
                     break;
             }
 
-            
+            System.out.println("");
             System.out.println("¿Desea continuar? 1. si 0. no");
             opcionWhile = scanner.nextInt();
         }
+
+
+        
+        //estatus final de las cuentas
+        account1.getaccountStatus();
+        account2.getaccountStatus();
+
 
         scanner.close();
 
